@@ -1,1 +1,1 @@
-Toto je hlavny ukazkovy subor , AAAaAAA
+Toto je hlavny ukazkovy subor , 
