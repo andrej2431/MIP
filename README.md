@@ -1,1 +1,1 @@
-Toto je hlavny ukazkovy subor , ZVOLEEEN
+a Toto je hlavny ukazkovy subor , ZVOLEEEN
