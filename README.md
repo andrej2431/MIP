@@ -1,3 +1,5 @@
-Toto je hlavny ukazkovy subor , aaaa ZVOLEEEN je najlepsi
+NIC
 
-a Toto je hlavny uk a das da sda sda sda sazkovy subor , ZVOLEEEN
+asdasd
+
+FINAL FINAL FINAL
