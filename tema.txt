@@ -1,0 +1,33 @@
+Personal Focus Manager 
+
+Problem: 
+
+ - digitálne preťaženie  
+
+- notifikácie, ktoré ľudí vyrušujú zo sustredenia  
+
+- porovnanie so Screen Time od Apple  
+
+- väčšia personalizácia  
+
+- sledovanie fungovania iných aplikácií 
+
+- návrhy na efektívnu úpravu povolených notifikácií, napríklad konkrétne telefónne čísla - porovnanie s inými existujúcimi riešeniami  
+
+ 
+
+Zdroje: 
+
+Design and evaluation of intelligent agent prototypes for assistance with focus and productivity at work - na porovnanie 
+
+Are Six Minutes of Focus Enough? An Exploratory Study of Multitasking Patterns in Workplace Environments. 
+
+More SMART than PHONE – Focused and Inspired Work 
+
+ 
+
+https://dl.acm.org/doi/10.1145/3596671.3598571 
+
+ 
+
+ 
