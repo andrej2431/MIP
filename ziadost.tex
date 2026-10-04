@@ -1,124 +1,65 @@
-% Metódy inžinierskej práce
-
-\documentclass[10pt,twoside,slovak,a4paper]{article}
+\documentclass[11pt,a4paper,slovak]{article}
 
 \usepackage[slovak]{babel}
-%\usepackage[T1]{fontenc}
-\usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
+\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{graphicx}
-\usepackage{url} % príkaz \url na formátovanie URL
-\usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
 
-\usepackage{cite}
-%\usepackage{times}
+\usepackage[sfdefault]{FiraSans}
 
-\pagestyle{headings}
+\usepackage{geometry}
+\geometry{
+    margin=2.5cm
+}
 
-\title{Názov\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2015/16, vedenie: Meno Priezvisko}} % meno a priezvisko vyučujúceho na cvičeniach
+\pagestyle{empty}
+\title{Zameranie projektu}
 
-\author{Meno Priezvisko\\[2pt]
-	{\small Slovenská technická univerzita v Bratislave}\\
-	{\small Fakulta informatiky a informačných technológií}\\
-	{\small \texttt{...@stuba.sk}}
-	}
+\author{
+{\small Metódy inžinierskej práce}\\
+\\
+{\small Fakulta informatiky a informačných technológií}\\
+{\small Slovenská technická univerzita v Bratislave}\\
+\\
+{\small Bublincová Martina}\\
+{\small Danečko Ján}\\
+{\small Dobrev Andrej Thomas}\\
+{\small Furman Michal}
+}
 
-\date{\small 30. september 2015} % upravte
-
-
+\date{\small 4. október 2026}
 
 \begin{document}
+\pagestyle{empty}
 
 \maketitle
-
-\begin{abstract}
-\ldots
-\end{abstract}
+\thispagestyle{empty}
 
 
+\newpage
 
-\section{Úvod}
 
-Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
+\section{Názov projektu}
 
-Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
-Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{nejaka}.
-Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
-Záverečné poznámky prináša časť~\ref{zaver}.
+Personalizovaný asistent sústredeia študentov
 
 
 
-\section{Nejaká časť} \label{nejaka}
+\section{Akronym} 
+PASS 
+\\
+\\
+''Use PASS to pass a test."
 
-Z obr.~\ref{f:rozhod} je všetko jasné. 
+\section{Anotácia} 
+Projekt PASS sa zameriava na problém digitálneho vyrušovania pozornosti študentov v dobe učenia. Mobilné telefóny sú častým distraktorom nielen kvôli notifikáciám, ale aj vďaka spontánnemu otváraniu aplikácií.  
 
-\begin{figure*}[tbh]
-\centering
-%\includegraphics[scale=1.0]{diagram.pdf}
-Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
-\caption{Rozhodujúci argument.}
-\label{f:rozhod}
-\end{figure*}
+Hlavným cieľom projektu je navrhnúť koncept mobilnej aplikácie určenej na zber, spracovanie a vizualizáciu údajov o rušení pozornosti počas učenia. Na základe identifikácie individuálnych vzorcov správania, bude možné navrhnúť používateľovi vhodné metódy a  cielené opatrenia pre zníženie vplyvu rušivých digitálnych stimulov a návykov.  
 
+Projekt bude zahŕňať  analýzu existujúcich riešení a súčasnej situácie výskumu v oblasti digitálneho rozptyľovania, návrh na efektívne vyhodnocovanie zozbieraných údajov a ich vzťahu s reakciami používateľa. Na rozdiel od bežných nástrojov založených na plošnom blokovaní notifikácií bude aplikácia PASS založená na individuálnom správaní a reakcii na konkrétne podnety, pričom bude používateľ informovaný o podvedomej manipulácii s mobilným telefónom a vyhľadávaní rozptýlenia.   
 
+Navrhnutá aplikácia bude mať jednoduché používateľské rozhranie, s dvomi základnými maskami: Profil a Štúdium. Funkcia Štúdium aktivuje režim zberu dát a zapne reštrikcie podľa nastavení v sekcii Profil. Aplikácia zozbiera informácie o využívaní iných aplikácií, notifikáciách a reakciách používateľa. Po ukončení režimu Štúdium aplikácia uloží nazbierané údaje, spracuje ich a vyhodnotené informácie vráti do  sekcie Profil, kde ich používateľ môže sledovať a rozhodovať o nasledujúch opatreniach. Medzi ďalšie funkcionality budú patriť aj dlhodobé výsledky formou grafov, kalendár štúdia, body za nepretržitú sériu študijných relácií a časovače. 
 
-\section{Iná časť} \label{ina}
-
-Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
-
-Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
+Výsledkom bude koncept mobilnej aplikácie na systematickú podporu sústredenia počas štúdia, pričom rozhodnutia o konkrétnych krokoch a obmedzeniach aplikácií a notifikácií ostane vždy konečmým rozhodnutím používateľa.   
 
 
-\subsection{Nejaké vysvetlenie} \label{ina:nejake}
-
-Niekedy treba uviesť zoznam:
-
-\begin{itemize}
-\item jedna vec
-\item druhá vec
-	\begin{itemize}
-	\item x
-	\item y
-	\end{itemize}
-\end{itemize}
-
-Ten istý zoznam, len číslovaný:
-
-\begin{enumerate}
-\item jedna vec
-\item druhá vec
-	\begin{enumerate}
-	\item x
-	\item y
-	\end{enumerate}
-\end{enumerate}
-
-
-\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
-
-\paragraph{Veľmi dôležitá poznámka.}
-Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
-
-
-
-\section{Dôležitá časť} \label{dolezita}
-
-
-
-
-\section{Ešte dôležitejšia časť} \label{dolezitejsia}
-
-
-
-
-\section{Záver} \label{zaver} % prípadne iný variant názvu
-
-
-
-%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
-
-
-% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
-\bibliography{literatura}
-\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
 \end{document}
