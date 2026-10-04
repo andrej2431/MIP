@@ -1,13 +1,2 @@
-NIC
-
-asdasd
-
-<<<<<<< HEAD
-FINAL FINAL FINAL
-
-
-
-ziaden zvolen
-=======
-FINAL FINAL FINAL
->>>>>>> 9bf3fdc121c7d4356cf29da9c4cd3c415d6fd88f
+# Piv;ots - Personalizovaná inhibícia vyrušovanie ; Odstránenie trúchlenia v štúdiu
+Projektový návrh aplikácie PASS, ktorá je určená na zabránenie rušenia pozornosti užívatela počas štúdia.
