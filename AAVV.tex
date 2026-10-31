@@ -1,55 +1,131 @@
-% Metódy inžinierskej práce
-
-\documentclass[5pt,twoside,slovak,a4paper]{article}
+\documentclass[10pt,slovak,a4paper]{article}
 
 \usepackage[slovak]{babel}
-%\usepackage[T1]{fontenc}
-\usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
+\usepackage[IL2]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
-\usepackage{url} % príkaz \url na formátovanie URL
-\usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
-
-\usepackage{cite}
-%\usepackage{times}
-
-\usepackage{multirow}
-% \usepackage{tabularx}
- \usepackage{tabularx}
+\usepackage{url} 
+\usepackage{hyperref}
+\usepackage{tabularx}
 \usepackage{changepage}
+\usepackage{float}
+\usepackage{xcolor, colortbl}
+\usepackage{booktabs}
 
-\usepackage{setspace}
+\definecolor{Gray}{rgb}{0.88,0.87,0.88}
+\newcolumntype{a}{>{\columncolor{Gray}}c}
+\newcolumntype{e}{>{\columncolor{Gray}}l}
+\newcolumntype{f}{>{\columncolor{Gray}}r}
+\newcolumntype{d}{>{\columncolor{Gray}}p{0.4\textwidth}}
+\newcolumntype{z}{>{\columncolor{Gray}}X}
 
+\newcommand{\thinline}{\arrayrulecolor{gray}\specialrule{0.2pt}{0pt}{0pt}\arrayrulecolor{black}}
 
 
 \renewcommand{\arraystretch}{1.4}
+\setlength{\extrarowheight}{2pt}
 \begin{document}
+{\centering\section*{VV 2026}\par}
 
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
-\begin{adjustwidth}{-2.5cm}{-4.5cm}
-\begin{tabularx}{\dimexpr\textwidth+7 cm\relax}{@{} p{0.05\textwidth} p{0.4\textwidth} X @{}}
+\begin{adjustwidth}{-3.5cm}{-3.5cm}
+\begin{tabularx}{\linewidth}{|a|d|X|}
+\hline
+\multicolumn{2}{|e|}{VV-A1} & \multicolumn{1}{|f|}{Základné informácie o projekte} \\ \hline
+01 & Evidenčné číslo projektu & 09124789127489012471 \\ \thinline
+02 & Dátum podania &  10.20.2026\\ \thinline
+03 & Názov projektu & Personalizovaný asistent sústredenia študentov \\ \thinline
+04 & Akronym projektu & x \\ \thinline
+05 & Odbor vedy a techniky & x \\ \thinline
+06 & Charakter výskumu & x \\ \thinline
+07 & Začiatok riešenia projektu & x \\ \thinline
+08 & Koniec riešenia projektu & x \\ \hline
 
-\multicolumn{2}{@{}l}{VV- A1} & Základné informácie o projekte \\ \hline
+09 & \multicolumn{2}{e|}{Anotácia (max 2000 znakov)} \\ \hline
+\multicolumn{3}{|X|}{
 
-01 & Evidenčné číslo projektu & 09124789127489012471 \\
-02 & Dátum podania &  10.20.2026\\
-03 & Názov projektu & Personalizovaný asistent sústredenia študentov \\
-04 & Akronym projektu & idk pivo ? xD \\
-05 & Odbor vedy a techniky & TEXT \\
-06 & Charakter výskumu & TEXT \\
-07 & Začiatok riešenia projektu & TEXT \\
-08 & Koniec riešenia projektu & TEXT \\ \hline
+} \\ \hline
 
-09 & \multicolumn{2}{c}{Anotácia (max 2000 znakov)} \\ 
-\multicolumn{3}{p{1.55\textwidth}}{ANOTACIA ANOTACIA ANOTACIA ANOTACIA ANOTACIA ANOTACIA ANOTACIA ANOTACIA ANOTACIA ANOTACIA ANOTACIA} \\ \hline
+10 & Žiadateľská organizácia & x \\ \thinline
+11 & Požadované finančné \newline prostriedky z APVV (v EUR) & x \\ \thinline
+12 & Spolufinacovanie proojektu \newline(v EUR) & x \\ \thinline
+13 & Celkové náklady na projetk \newline(v EUR) & x \\ \thinline
+\hline
 
-10 & Žiadateľská organizácia & STU ?? \\
-11 & Požadované finančné \newline prostriedky z APVV (v EUR) & xxxxxxxxxxxxxxxxxxxxxxxxxx \\
-12 & Spolufinacovanie proojektu \newline(v EUR) & xxxxxxxxxxxxxxxxxxxxxxxxxx \\
-13 & Celkové náklady na projetk \newline(v EUR) & xxxxxxxxxxxxxxxxxxxxxxxxxx \\
+\end{tabularx}
+\end{adjustwidth}
+\end{table}
 
+
+
+\clearpage
+
+
+
+\begin{table}[H]
+\centering
+\begin{adjustwidth}{-3.5cm}{-3.5cm}
+\begin{tabularx}{\linewidth}{|a|d|X|}
+\hline
+\multicolumn{2}{|e|}{VV-A2} & \multicolumn{1}{|f|}{Základné informácie o riešiteľských organizáciách} \\ \hline
+\multicolumn{3}{|e|}{Žiadateľ} \\ \hline
+01 & Názov organizácie & x \\ \thinline
+02 & Skrátený názov &  x\\ \thinline
+03 & Adresa organizácie & x \\ \thinline
+04 & IČO & x \\ \thinline
+05 & Príslušnosť k rezortu & x \\ \thinline
+06 & Forma hospodárenia & x \\ \thinline
+07 & Kontaktná osoba & x \\ \thinline
+07 & Telefón & x \\ \thinline
+07 & FAX & x \\ \thinline
+07 & E-mail & x \\ \thinline
+08 & Štatutárny zástupca I & x \\ \thinline
+09 & Štatutárny zástupca II & x \\ \thinline
+
+\hline
+
+\end{tabularx}
+\end{adjustwidth}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{adjustwidth}{-3.5cm}{-3.5cm}
+\begin{tabularx}{\linewidth}{|c|c|c|c|c|c|X|}
+\hline
+\multicolumn{1}{|e|}{VV-A3} & \multicolumn{6}{|f|}{Zoznam riešiteľov} \\ \hline
+\multicolumn{1}{|e|}{01} & \multicolumn{6}{|e|}{Zoznam zamestnancov priamo sa podieľajúcich na riešení projektu} \\ \hline
+\multicolumn{1}{|a|}{Meno a Priezisko} & \multicolumn{1}{|a|}{Tituly} & \multicolumn{1}{|a|}{Pracovné zariadenie} & \multicolumn{1}{|a|}{\shortstack{Dátum\\narodenia}}
+& \multicolumn{1}{|a|}{\shortstack{IČO\\organizacie}} & \multicolumn{1}{|a|}{\shortstack{Počet\\hodín}} & \multicolumn{1}{|a|}{\shortstack{Počet hodín\\v rokoch}} \\ \thinline
+Andrej Thomas Dobrev & x & študent & x & x & x & x \\ \thinline
+
+Andrej Thomas Dobrev & x & študent & x & x & x & x \\ \thinline
+
+Andrej Thomas Dobrev & x & študent & x & x & x & x \\ \thinline
+
+Andrej Thomas Dobrev & x & študent & x & x & x & x \\ \thinline
+
+\hline
+
+\end{tabularx}
+\end{adjustwidth}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\begin{adjustwidth}{-3.5cm}{-3.5cm}
+\begin{tabularx}{\linewidth}{|c|c|c|X|}
+\hline
+\multicolumn{2}{|e|}{VV-A3} & \multicolumn{2}{|f|}{Zoznam riešiteľov} \\ \hline
+\multicolumn{1}{|e|}{02} & \multicolumn{1}{|e|}{Ostatní zamestnanci}  & \multicolumn{1}{|e|}{Celkový počet ostatných osôb} & x\\ \hline
+\multicolumn{1}{|e|}{02} & \multicolumn{1}{|e|}{Ostatní zamestnanci}  & \multicolumn{1}{|e|}{Súhrnná kapacita ostatných osôb v hodinách} & x\\ \hline
+\multicolumn{1}{|e|}{03} & \multicolumn{1}{|e|}{Spolu}  & \multicolumn{1}{|e|}{Celkový počet zamestnancov} & x\\ \hline
+\multicolumn{1}{|e|}{03} & \multicolumn{1}{|e|}{Spolu}  & \multicolumn{1}{|e|}{Súhrnná kapacita zamestnancov v hodinách} & x\\ \hline
+
+\hline
 
 \end{tabularx}
 \end{adjustwidth}
@@ -57,73 +133,100 @@
 
 \clearpage
 
-\begin{table}[htbp]
+
+
+\begin{table}[H]
 \centering
-\begin{adjustwidth*}{-2.5cm}{-4.5cm}
-\begin{tabularx}{\dimexpr\textwidth+7 cm\relax}{@{} p{0.05\textwidth} p{0.4\textwidth} X @{}}
-
-\multicolumn{2}{@{}l}{VV- A2} & Základné informácie o riešiteľských organizáciach \\ \hline
-\multicolumn{3}{p{1.55\textwidth}}{Žiadateľ} \\ \hline
-
-
-01 & Názov organizácie & text \\
-02 & Skrátený názov & TEXT TEXT TEXTTEXTTEXTTEXT TEXTTEXT TEXT TEXTTEXT TEXT TEXT \\
-03 & Adresa organizácie & TEXT \\
-04 & IČO & idk pivo ? xD \\
-05 & Príslušnosť k rezortu & TEXT \\
-06 & Forma hospodárenia & Veľmi zlá  \\ \hline
-07 & Kontaktná osoba & Martina Bublincová \\
- & Telefón & +421 944 867 360 \\
- & FAX & TEXT \\
- & E-mail & xbublincova@stuba.sk \\ \hline
-08 & Štatutárny zástupca I & TEXT \\ 
-09 & Štatutárny zástupca II & text \\
-
+\begin{adjustwidth}{-3.5cm}{-3.5cm}
+\begin{tabularx}{\linewidth}{|a|d|X|}
+\hline
+\multicolumn{2}{|e|}{VV-A4} & \multicolumn{1}{|f|}{Základné informácie o zodpovednom riešiteľovi} \\ \hline
+01 & Meno a Priezisko & x \\ \thinline
+02 & Pohlavie &  x\\ \thinline
+03 & Telefón & x \\ \thinline
+04 & Email & x \\ \thinline
 \end{tabularx}
-\end{adjustwidth*}
+\end{adjustwidth}
 \end{table}
 
-\clearpage
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
-\begin{adjustwidth*}{-2.5cm}{-4.5cm}
-\begin{tabularx}{\dimexpr\textwidth+7 cm\relax}{@{} X p{0.15\textwidth} p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth} p{0.1\textwidth} p{0.2\textwidth} @{}}
-\multicolumn{3}{l}{VV- A3}& \multicolumn{4}{c}{ Zoznam riešiteľov }\\ \hline
-\multicolumn{2}{@{}l}{01} &\multicolumn{5}{c}{ Zoznam zamestnancov priamo sa podieľajúcich na riešení projektu} \\ \hline \hline
- Meno a Priezvisko & Tituli & Pracovné \newline zariradenie& Dátum \newline narodenia& IČO \newline organizacie & Počet hodín &počet hodín \newline v rokoch \\ \hline
-Ján Danečko & Debil.tm & Mentálny Ústav v pezinku & 7.9.2005 & XXXXX & 0 & 0 \\
+\begin{adjustwidth}{-3.5cm}{-3.5cm}
+\begin{tabularx}{\linewidth}{|a|X|}
+\hline
+\multicolumn{2}{|e|}{Čestné vyhlásenie zodpovedného riešiteľa} \\ \hline
+\multicolumn{2}{|X|}{
+Ja, dolu podpísaný/á, čestne vyhlasujem, že údaje uvedené v častiach „Základné informácie o zodpovednom riešiteľovi“ a v štruktúrovanom profesijnom životopise sú pravdivé. 
 
-meno priezvisko & titul & prac zar & datum nar. & ico org & hod & hod rok \\
-
-meno priezvisko & titul & prac zar & datum nar. & ico org & hod & hod rok \\
-
-meno priezvisko & titul & prac zar & datum nar. & ico org & hod & hod rok \\ \hline 
-\\
-
-
-
+Ja, dolu podpísaný/á, , čestne vyhlasujem, že v rámci riešenia projektu budú zo strany žiadateľa rešpektované
+všetky zásady etických princípov vyplývajúce z európskej a národnej legislatívy.  
+} \\ \hline
+Podpis zodpovedného riešiteľa  & x \\ \hline
+Miesto & x \\ \hline
+Dátum & x \\ \hline
 \end{tabularx}
-\end{adjustwidth*}
+\end{adjustwidth}
 \end{table}
 
-\begin{table}[htbp]
+
+\begin{table}[H]
 \centering
-\begin{adjustwidth*}{-2.5cm}{-4.5cm}
-\begin{tabularx}{\dimexpr\textwidth+7 cm\relax}{@{} X p{0.15\textwidth} p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth} p{0.1\textwidth} p{0.2\textwidth} @{}}
- Meno a Priezvisko & Tituli & Pracovné \newline zariradenie& Dátum \newline narodenia& IČO \newline organizacie & Počet hodín &počet hodín \newline v rokoch \\ \hline
-Ján Danečko & Debil.tm & Mentálny Ústav v pezinku & 7.9.2005 & XXXXX & 0 & 0 \\
+\begin{adjustwidth}{-3.5cm}{-3.5cm}
+\begin{tabularx}{\linewidth}{|e|z|}
+\hline
+{VV-A4} & \multicolumn{1}{|f|}{Základné informácie o zodpovednom riešiteľovi} \\ \hline
+05 & Zodpovedný riešiteľ je mladým vedeckým pracovníkom \\ \hline
+\multicolumn{2}{|l|}{x} \\ \hline
 
-meno priezvisko & titul & prac zar & datum nar. & ico org & hod & hod rok \\
+06 a & Typ vedeckej databázy \\ \hline
+\multicolumn{2}{|l|}{x} \\ \hline
 
-meno priezvisko & titul & prac zar & datum nar. & ico org & hod & hod rok \\
+06 a & ID výskumníka \\ \hline
+\multicolumn{2}{|l|}{x} \\ \hline
 
-meno priezvisko & titul & prac zar & datum nar. & ico org & hod & hod rok \\
+06 b & Typ vedeckej databázy \\ \hline
+\multicolumn{2}{|l|}{x} \\ \hline
 
+06 b & ID výskumníka \\ \hline
+\multicolumn{2}{|l|}{x} \\ \hline
 
+06 c & Typ vedeckej databázy \\ \hline
+\multicolumn{2}{|l|}{x} \\ \hline
+06 c & ID výskumníka \\ \hline
+\multicolumn{2}{|l|}{x} \\ \hline
 
+07 & \shortstack{Prehľad projektov zodpovedného riešiteľa realizovaných v priebehu posledných 5 rokov v\\
+štruktúre: názov projektu, grantová schéma, roky realizácie,\\
+rozpočet, pozícia zodpovedného riešiteľa}
+\\ \hline
+\multicolumn{2}{|l|}{x} \\ \hline
+
+07 & Počet - Projekty zodpovedného riešiteľa realizované v priebehu posledných 5 rokov 
+\\ \hline
+\multicolumn{2}{|l|}{x} \\ \hline
+
+08 & \shortstack{Expertízy, konzultácie a ostatné výsledky s priamym využitím v hospodárskej a spoločenskej\\
+praxi za posledných 5 rokov}
+\\ \hline
+\multicolumn{2}{|l|}{x} \\ \hline
+
+08 & \shortstack{Počet - Expertízy, konzultácie a ostatné výsledky s priamym využitím v hospodárskej a\\
+spoločenskej praxi za posledných 5 rokov}
+\\ \hline
+\multicolumn{2}{|l|}{x} \\ \hline
+
+09 & \shortstack{Aplikačné výstupy - chránené (napríklad konkrétny patent, vynález, úžitkový vzor a zaradenie\\
+do príslušnej TRL stupnice)}
+\\ \hline
+\multicolumn{2}{|l|}{x} \\ \hline
+
+09 & Počet - Aplikačné výstupy - chránené
+\\ \hline
+\multicolumn{2}{|l|}{x} 
+
+\\ \hline
 \end{tabularx}
-\end{adjustwidth*}
+\end{adjustwidth}
 \end{table}
-
 \end{document}
