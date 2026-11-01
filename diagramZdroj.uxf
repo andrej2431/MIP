@@ -47,7 +47,7 @@ bg=LIGHT_GRAY</panel_attributes>
       <h>60</h>
     </coordinates>
     <panel_attributes>Zpracovanie dát
-PAAS-om
+PASS-om
 fg=BLACK
 bg=BLUE</panel_attributes>
     <additional_attributes/>
