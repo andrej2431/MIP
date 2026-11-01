@@ -11,6 +11,25 @@
 
 \usepackage{graphicx}
 
+
+\usepackage{url} 
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{changepage}
+\usepackage{float}
+\usepackage{xcolor, colortbl}
+\usepackage{booktabs}
+
+
+
+\newcommand{\thinline}{\arrayrulecolor{gray}\specialrule{0.2pt}{0pt}{0pt}\arrayrulecolor{black}}
+
+
+\renewcommand{\arraystretch}{1.4}
+\setlength{\extrarowheight}{2pt}
+
+
+
 \hypersetup{
 	colorlinks=true,
 	linkcolor=black,
@@ -120,6 +139,25 @@ Dlhodobým cieľom je, aby používateľ postupne získal lepší prehľad o vla
 Co vytvorime realne?
 
 Ako riesenie otesujeme? Na kom?
+
+\begin{table}[H]
+\centering
+\begin{adjustwidth}{-3.5cm}{-3.5cm}
+\begin{tabularx}{\linewidth}{|l|l|X|}
+\hline
+\multicolumn{1}{|e|}{VV-D} & \multicolumn{2}{|f|}{Harmonogram projektu} \\ \hline
+\multicolumn{1}{|e|}{Začiatok etapy} & \multicolumn{1}{|e|}{Koniec etapy} & \multicolumn{1}{|e|}{Názov etapy}\\ \hline
+1.1.2027  & 31.1.2027 & Vyvoj prototypu aplikacie \\ \hline
+1.2.2027 & 14.2.2027 & 1. vlna testovania prototypu \\ \hline
+14.2.2027 & 14.3.2027 & Zlepšenie prototypu \\ \hline
+15.3.2027 & 28.3.2027 & 2. vlna testovania prototypu \\ \hline
+28.3.2027 & 4.4.2027 & Záverečné vylepšenia a zhotovonie vysledkov testovania \\ \hline
+
+\end{tabularx}
+\end{adjustwidth}
+\end{table}
+
+
 
 \section{Výsledky}
 
